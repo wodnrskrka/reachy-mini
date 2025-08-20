@@ -160,7 +160,7 @@ def speak_nonblocking(text, lang='ko'):
 
 # ========== 날씨 정보 ==========
 def get_weather(city="Seoul"):
-    API_KEY = "5d17af980c9cf48721b0e57c1b4fedaf"
+    API_KEY = "Your API KEY"
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&lang=kr&units=metric"
     res = requests.get(url)
     if res.status_code == 200:
